@@ -1,0 +1,170 @@
+#product-container
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+#product-img
+{
+	width: 60%;
+	
+}
+
+#product-img > img
+{
+	width: 100%;
+	border-radius: 40px;
+}
+
+#product-info
+{
+	width: 35%;
+}
+
+#product-info
+{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+#product-info a
+{
+	color: black;
+	text-decoration: underline;
+}
+
+#product-info p
+{
+	color: #777E91;
+	font-size: 1.2rem;
+}
+
+#product-info h1
+{
+	font-size: 3rem;
+}
+
+#product-price
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+#product-price-usd
+{
+	color: #777E90;
+	font-weight: 900;
+	border: 2px solid #E6E8EC;
+	border-radius: 4px;
+	padding: 6px 8px;
+	font-size: 0.75rem;
+	width: fit-content;
+	height: fit-content;
+}
+
+#product-owners
+{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.product-dude
+{
+	display: flex;
+	gap: 10px;
+	border-bottom: #E6E8EC 1px solid;
+	padding-bottom: 20px;
+}
+
+.product-dude > img
+{
+	border-radius: 28px;
+	max-width: 56px;
+	max-height: 56px;
+}
+
+.product-dude-title
+{
+	padding: 5px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#product-bid
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #E6E8EC;
+	padding: 24px;
+	gap: 30px;
+
+	/* depth/4 */
+	box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+	border-radius: 16px;
+}
+
+#product-bid-info
+{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 10px;
+}
+
+#product-bid-info img
+{
+	border-radius: 50%;
+}
+
+#product-bid-info-text
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#product-bid-info-text span
+{
+	color: #777E90;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+#product-bider
+{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+#product-bid-value
+{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+#product-bid-buttons
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+@media (max-width: 992px) { 
+	#product-container
+	{
+		flex-direction: column;
+	}
+
+	#product-container > div
+	{
+		width: 100%;
+	}
+}
